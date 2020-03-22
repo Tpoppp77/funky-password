@@ -59,8 +59,10 @@ function generatePassword() {
         alert("Error");
 
         function generatePassword() {
+            var passwordText = document.createElement("INPUT");
+            passwordText.setAttribute("type", "password");
             var passwordText = document.getElementById("generate").value;
-            document.getElementById("btn").innerHTML = passwordText;
+            document.getElementById("btn").buttonDiv = passwordText;
 
             return passWord;
 
@@ -69,11 +71,5 @@ function generatePassword() {
 
     }
 }
-
-
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
-
