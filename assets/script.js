@@ -56,16 +56,16 @@ function generatePassword() {
         return passWord;
 
     } else {
-        alert("Follow directions");
+        alert("Error");
         generatePassword();
     }
     return passWord;
 }
 
-var generateBtn
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-function generatePassword();
+
 
