@@ -23,7 +23,7 @@ function generatePassword() {
     var passWordSpecialCharacters = confirm("How about some special characters?");
 
     if (typeof passWordLgh === "number" && passWordLgh > 8 && passWordLgh < 150) {
-       
+
 
         var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
         var passWordSpecialChar = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "?", "-", "_", "+", "="];
@@ -57,9 +57,17 @@ function generatePassword() {
 
     } else {
         alert("Error");
-        generatePassword();
+
+        function generatePassword() {
+            var passwordText = document.getElementById("generate").value;
+            document.getElementById("btn").innerHTML = passwordText;
+
+            return passWord;
+
+        }
+
+
     }
-    return passWord;
 }
 
 
