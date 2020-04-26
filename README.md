@@ -1,6 +1,7 @@
 # funky-password
 <h1>PassWord Generator</h1>
 
+https://tpoppp77.github.io/funky-password/
 
 <ul>
     <ol>Created a random PassWord generator</ol>
